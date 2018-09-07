@@ -4,9 +4,7 @@ from programmedlessons.org
 
 ## currently working through:
 
-* chapter 16 (1,2,4,,6,7,8)
-* chapter 17 (any 2)
-* chapter 18 (1,2)
+* nothing
 
 ## completed:
  
@@ -17,3 +15,6 @@ from programmedlessons.org
 * chapter 12
 * chapter 13
 * chapter 14
+* chapter 16
+* chapter 17
+* chapter 18

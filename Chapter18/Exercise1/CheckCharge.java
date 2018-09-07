@@ -12,23 +12,15 @@ public class CheckCharge{
 		System.out.println("what is the balance of the savings account?");
 		savings = scan.nextInt();
 
-		boolean noCharge;
-
-		if (checking >= 1000 || savings >=1500){
-			noCharge;
-		} else {
-			noCharge = false;
-		}
-
 		double serviceCharge;
 
-		if (noCharge){
+		if (checking >= 1000 || savings >=1500){
 			serviceCharge = 0.00;
 		} else {
 			serviceCharge = 0.15;
 		}
 
 		System.out.println("The service charge is: %" + serviceCharge);
-		
+
 	}
 }
