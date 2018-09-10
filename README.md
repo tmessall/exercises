@@ -1,10 +1,10 @@
-# Java exercises
+# Java exercises on programmedlessons.org
 
 from programmedlessons.org
 
 ## currently working through:
 
-* chapter 15 (2 - 3)
+* chapter 15 (3)
 * chapter 16 (3)
 * chapter 17 (2or3, 7)
 * chapter 18 (3, 5or6)
