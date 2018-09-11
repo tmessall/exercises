@@ -4,6 +4,7 @@ from programmedlessons.org
 
 ## currently working through:
 
+<<<<<<< HEAD
 * chapter 16 (1, 2, 3)
 * chapter 17 (1, 2/3, 4/5, 7)
 * chapter 18 (1, 2, 3, 5/6)
@@ -26,3 +27,4 @@ from programmedlessons.org
 ### after the website changed:
 
 * chapter 15 (1, 2, 3)
+
