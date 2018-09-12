@@ -10,14 +10,17 @@ public class AddUpIntegers{
 		howMany = scan.nextInt();
 
 
-		int i = 0;
+		int i = 1;
 		int sum = 0;
-		while (i < 0){
+		
+		while ( i <= howMany ) {
 			System.out.println("Enter an integer:");
-			sum = sum + scan.nextInt();
+			int x = scan.nextInt();
 			i = i + 1;
+			sum = sum + x;
 		}
 
 		System.out.println("The sum is " + sum);
+
 	} 
 }
