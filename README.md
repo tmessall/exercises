@@ -9,7 +9,7 @@ from programmedlessons.org
 
 ## completed:
 
-### before the website changed: 
+### using the newest java on programmedlessons.org: 
 
 * chapter 8
 * chapter 9
@@ -22,7 +22,7 @@ from programmedlessons.org
 * chapter 17 (1, 5)
 * chapter 18 (1, 2)
 
-### after the website changed:
+### using the old java tutorial on programmedlessons.org:
 
 * chapter 15 (1, 2, 3)
 * chapter 16 (1, 2, 3)
