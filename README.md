@@ -4,8 +4,16 @@ from programmedlessons.org
 
 ## currently working through:
 
-* chapter 17 (4/5, 7)
+### old java:
+
 * chapter 18 (1, 2, 3, 5/6)
+
+### new java:
+
+* chapter 18 (1-3, 5/6)
+* chapter 19 (4)
+* chapter 24 (1, 2/3, 4)
+* chapter 25 (2, 3)
 
 ## completed:
 
@@ -26,5 +34,5 @@ from programmedlessons.org
 
 * chapter 15 (1, 2, 3)
 * chapter 16 (1, 2, 3)
-* chapter 17 (1, 3)
+* chapter 17 (1, 3, 4, 7)
 
