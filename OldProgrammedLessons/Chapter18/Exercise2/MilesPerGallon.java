@@ -20,6 +20,9 @@ public class MilesPerGallon{
 			double milesPerGallon = (finalMiles - initialMiles + 0.0)/gallons;
 
 			System.out.println("Miles per Gallon: " + milesPerGallon);
+			
+			System.out.println("Initial miles:  ");
+			initialMiles = scan.nextInt();
 		}
 
 		System.out.println("bye");

@@ -6,7 +6,7 @@ from programmedlessons.org
 
 ### old java:
 
-* chapter 18 (2, 3, 5/6)
+* chapter 18 (5/6)
 
 ### new java:
 
@@ -35,4 +35,4 @@ from programmedlessons.org
 * chapter 15 (1, 2, 3)
 * chapter 16 (1, 2, 3)
 * chapter 17 (1, 3, 4, 7)
-* chapter 18 (1)
+* chapter 18 (1, 2, 3)
