@@ -6,7 +6,7 @@ from programmedlessons.org
 
 ### new java:
 
-* chapter 24 (1, 2/3, 4)
+* chapter 24 (2/3, 4)
 * chapter 25 (2, 3)
 
 ## completed:
@@ -24,6 +24,7 @@ from programmedlessons.org
 * chapter 17 (1, 5)
 * chapter 18 (1, 2)
 * chapter 19 (4)
+* chapter 24 (1)
 
 ### using the old java tutorial on programmedlessons.org:
 
