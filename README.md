@@ -4,9 +4,7 @@ from programmedlessons.org
 
 ## currently working through:
 
-### new java:
-
-* chapter 25 (3)
+* none
 
 ## completed:
 
@@ -24,7 +22,7 @@ from programmedlessons.org
 * chapter 18 (1, 2)
 * chapter 19 (4)
 * chapter 24 (1, 2, 4)
-* chapter 25 (2)
+* chapter 25 (2, 3)
 
 ### using the old java tutorial on programmedlessons.org:
 
