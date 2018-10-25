@@ -4,7 +4,6 @@ from programmedlessons.org
 
 ## currently working through:
 
-* chapter 47 (2)
 * chapter 50 (ace the quiz, all exercises)
 * chapter 51 (review)
 * chapter 52 (ace the quiz)
@@ -35,7 +34,7 @@ from programmedlessons.org
 * chapter 44 (ace the quiz, 1, 6)
 * chapter 45 (ace the quiz)
 * chapter 46 (review)
-* chapter 47 (review, 1)
+* chapter 47 (review, 1, 2)
 
 ### using the old java tutorial on programmedlessons.org:
 
