@@ -41,6 +41,10 @@ class Jam
        System.out.println("No jam in the Jar!");
   }
 
+  public int getSize() {
+    return this.capacity;
+  }
+
 }
 
 class Pantry
@@ -107,5 +111,32 @@ class Pantry
   public void spread( int oz )
   {
     selected.spread(oz) ;
+  }
+
+  public void replace( Jam j, int slot ) {
+    if (slot == 1) {
+      this.jar1 = j;
+    } else if (slot == 2) {
+      this.jar2 = j;
+    } else {
+      this.jar3 = j;
+    }
+  }
+
+  public void mixedFruit() {
+    if (jar1.getSize() <= 2 && jar2.getSize() <= 2 && jar3.getSize() <= 2) {
+      replace(makeMixedFruit(), 1);
+      this.jar2 = null;
+      this.jar3 = null;
+      System.out.println("Made mixed fruit!");
+    } else {
+      System.out.println("There is too much jam in these jars to make mixed fruit.");
+    }
+  }
+
+  public Jam makeMixedFruit() {
+    int contentTotal = jar1.getSize() + jar2.getSize() + jar3.getSize();
+    Jam mixed = new Jam("Mixed Fruit", "7/11/18", contentTotal);
+    return mixed;
   }
 }

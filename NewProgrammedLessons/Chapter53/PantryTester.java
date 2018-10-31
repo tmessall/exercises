@@ -65,5 +65,27 @@ public class PantryTester {
 
     System.out.println("The hubbard jams are: \n" + hubbard);
     System.out.println("Goodbye!");
+
+    Pantry banana = new Pantry(goose, apple, rhub);
+    Jam straw = new Jam("Strawberry", "7/10/18", 10);
+
+    System.out.println(banana);
+    banana.replace(straw, 2);
+    System.out.println(banana);
+
+    System.out.println("Enter your selection:");
+    jamChoice = scan.nextInt();
+
+    while (jamChoice != -1) {
+      System.out.println("Enter amount to spread:");
+      int spreadAmount = scan.nextInt();
+      banana.select(jamChoice);
+      banana.spread(spreadAmount);
+      banana.mixedFruit();
+      System.out.println( banana );
+      System.out.println("Enter your selection:");
+      jamChoice = scan.nextInt();
+    }
+
   }
 }

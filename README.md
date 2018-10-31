@@ -4,7 +4,6 @@ from programmedlessons.org
 
 ## currently working through:
 
-* chapter 53 (3, 4)
 * chapter 54 (ace the quiz, 1, 2, 3, 4)
 
 ## completed:
@@ -35,7 +34,7 @@ from programmedlessons.org
 * chapter 50 (ace the quiz, 1, 2, 3, 4, 5)
 * chapter 51 (review)
 * chapter 52 (ace the quiz)
-* chapter 53 (review, 1, 2)
+* chapter 53 (review, 1, 2, 3, 4)
 
 ### using the old java tutorial on programmedlessons.org:
 
