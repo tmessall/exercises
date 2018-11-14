@@ -4,6 +4,11 @@ from programmedlessons.org
 
 ## currently working through:
 
+* chapter 60 (ace the quiz, review, all exercises)
+* chapter 61 (ace the quiz, review, 1 - 6, 9 - 11)
+* chapter 62 (ace the quiz, review)
+* chapter 63 (ace the quiz, review, 1 - 4)
+
 ## completed:
 
 ### using the newest java on programmedlessons.org: 
