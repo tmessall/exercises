@@ -4,7 +4,7 @@ from programmedlessons.org
 
 ## currently working through:
 
-* chapter 63 (2, 3)
+* chapter 63 (3)
 * chapter 64 (ace the quiz)
 * chapter 65 (ace the quiz)
 * chapter 66 (1 - 3, 5)
@@ -43,7 +43,7 @@ from programmedlessons.org
 * chapter 60 (ace the quiz, 1, 2, 3, 4, 5)
 * chapter 61 (ace the quiz, 1, 2, 3, 4, 5, 6, 9, 10)
 * chapter 62 (read the info)
-* chapter 63 (1)
+* chapter 63 (1, 2)
 
 ### using the old java tutorial on programmedlessons.org:
 

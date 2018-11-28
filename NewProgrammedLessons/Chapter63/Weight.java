@@ -10,11 +10,22 @@ public class Weight {
 	}
 
 	public String toString() {
-		String str = "Weights: ";
+		String str = "Weights: \n";
 		for (int i = 0; i < data.length; i++) {
 			str += data[i] + ", ";
 		}
 
 		return str;
+	}
+
+	public int average() {
+		int avg = 0;
+		for (int i = 0; i < data.length; i++) {
+			avg += data[i];
+		}
+
+		avg = (avg/data.length);
+
+		return avg;
 	}
 }
