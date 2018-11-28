@@ -28,4 +28,13 @@ public class Weight {
 
 		return avg;
 	}
+
+	public int subAverage(int start, int end) {
+		int avg = 0;
+		for (int i = start; i < end + 1; i++) {
+			avg += data[i];
+		}
+		avg = avg/(end-start+1);
+		return avg;
+	}
 }

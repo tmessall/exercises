@@ -8,5 +8,7 @@ public class WeightTester
     Weight june = new Weight( values );
     System.out.println(june.toString());
    	System.out.println(june.average()); 
+   	System.out.println(june.subAverage(3,5));
+   	System.out.println(june.subAverage(14,18));
   }
 } 
