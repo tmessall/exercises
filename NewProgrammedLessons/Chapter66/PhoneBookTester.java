@@ -22,7 +22,7 @@ class PhoneBook
 
   public PhoneBook()    // constructor
   {
-    phoneBook = new PhoneEntry[ 7 ] ;
+    phoneBook = new PhoneEntry[7] ;
 
     phoneBook[0] = new PhoneEntry( "James", "Barclay", "(418) 665-1223" );
     phoneBook[1] = new PhoneEntry( "Grace", "Dunbar", "(860) 399-3044" );
@@ -32,6 +32,22 @@ class PhoneBook
     phoneBook[5] = new PhoneEntry( "John", "Smith", "(812) 339-4916");
     phoneBook[6] = new PhoneEntry( "Willoughby", "Smith", "(312) 992-8761");
 
+  }
+
+  public int getLength() {
+    return 7;
+  }
+
+  public PhoneEntry getEntry(int i) {
+    return phoneBook[i];
+  }
+
+  public void setEntry(int i, String first, String last, String phone) {
+    phoneBook[i] = new PhoneEntry(first, last, phone);
+  }
+
+  public void setNull(int i) {
+    phoneBook[i] = null;
   }
 
   public PhoneEntry search(String targetFirstName, String targetLastName)  
@@ -44,6 +60,18 @@ class PhoneBook
     }
 
     return null;
+  }
+
+  public int personLocation(String targetFirstName, String targetLastName) {
+    int personLocation = -1;
+    for ( int j=0; j < phoneBook.length; j++ )
+    {
+      if ( phoneBook[j] != null && phoneBook[j].getFirstName().toUpperCase().equals(targetFirstName.toUpperCase()) && phoneBook[j].getLastName().toUpperCase().equals(targetLastName.toUpperCase())) {
+        personLocation = j;
+        j = phoneBook.length;
+      }
+    }
+    return personLocation;
   }
 
   public PhoneEntry[] searchAllLasts(String targetName) {
@@ -65,32 +93,72 @@ public class PhoneBookTester
     PhoneBook pb = new PhoneBook(); 
     Scanner scan = new Scanner(System.in); 
   
-    System.out.println("Last Name?");
-    String searchLastName = scan.nextLine();
+    System.out.println("Do you want to search for a name, add a name, or delete a name? (Say \"quit\" to exit)");
+    String task = scan.nextLine();
 
-    while (! searchLastName.equals("quit")){
-      System.out.println("First Name?");
-      String searchFirstName = scan.nextLine();
-      if (searchFirstName.isEmpty()) {
-        PhoneEntry[] entries = pb.searchAllLasts(searchLastName.toUpperCase());
-        for (int i = 0; i < entries.length; i++) {
-          if (entries[i] != null) {
-            System.out.println(entries[i].getFirstName() + " " + entries[i].getLastName() + ": " + entries[i].getPhone());
+    while (! task.equals("quit")) {
+      if (task.toUpperCase().equals("SEARCH")) {
+        System.out.println("Last Name?");
+        String searchLastName = scan.nextLine();
+        System.out.println("First Name?");
+        String searchFirstName = scan.nextLine();
+        if (searchFirstName.isEmpty()) {
+          PhoneEntry[] entries = pb.searchAllLasts(searchLastName.toUpperCase());
+          for (int i = 0; i < entries.length; i++) {
+            if (entries[i] != null) {
+              System.out.println(entries[i].getFirstName() + " " + entries[i].getLastName() + ": " + entries[i].getPhone());
+            }
+          }
+        } else {
+          PhoneEntry entry = pb.search(searchFirstName.toUpperCase(), searchLastName.toUpperCase()); 
+          if ( entry != null ) {
+            System.out.println("The number is: " + entry.getPhone());
+          } else {
+          System.out.println("Name not found");
+          }
+            }  
+        System.out.println("");
+      } else if (task.toUpperCase().equals("ADD")) {
+        Boolean nullCell = false;
+        int whichCell = -1;
+        for (int i = 0; i < pb.getLength(); i++) {
+          if (pb.getEntry(i) == null) {
+            nullCell = true;
+            whichCell = i;
+            i = pb.getLength();
           }
         }
-      } else {
-        PhoneEntry entry = pb.search(searchFirstName.toUpperCase(), searchLastName.toUpperCase()); 
-        if ( entry != null ) {
-         System.out.println("The number is: " + entry.getPhone());
+        if (nullCell) {
+          System.out.println("What is the last name?");
+          String addLast = scan.nextLine();
+          System.out.println("What is the first name?");
+          String addFirst = scan.nextLine();
+          System.out.println("What is the phone number?");
+          String addPhone = scan.nextLine();
+          pb.setEntry(whichCell, addFirst, addLast, addPhone);
+          System.out.println("You successfully added " + addFirst + " " + addLast + " to the phone book.");
         } else {
-          System.out.println("Name not found" );
+          System.out.println("Sorry, there was an error. Make sure the phonebook is not full.");
         }
-      }  
-      System.out.println("");
-      System.out.println("Last Name?");
-      searchLastName = scan.nextLine();
+      } else if (task.toUpperCase().equals("DELETE")) {
+        System.out.println("What is the last name of the person you want to delete?");
+        String deleteLast = scan.nextLine();
+        System.out.println("What is the first name of the person you want to delete?");
+        String deleteFirst = scan.nextLine();
+        int place = pb.personLocation(deleteFirst, deleteLast);
+        if (place == -1) {
+          System.out.println("That person does not exist in the phone book.");
+        } else {
+          pb.setNull(place);
+          System.out.println("You successfully deleted " + deleteFirst + " " + deleteLast + " from the phone book.");
+        }
+      } else {
+        System.out.println("Please say search, add, or delete.");
+      }
+      System.out.println("Do you want to search for a name, add a name, or delete a name? (Say \"quit\" to exit)");
+      task = scan.nextLine();
     }
-
+    
     System.out.println("good-by");
 
   }
